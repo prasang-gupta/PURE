@@ -162,6 +162,8 @@ if __name__ == '__main__':
                         help="the base model directory")
 
     parser.add_argument('--seed', type=int, default=0)
+    parser.add_argument('--no_cuda', action='store_true',
+                        help="Whether not to use CUDA when available")
 
     parser.add_argument('--context_window', type=int, required=True, default=None, 
                         help="the context window size W for the entity model")
